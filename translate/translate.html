@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>translate</title>
+	<style type="text/css">
+		#dark {
+			margin-top: 100px; 
+			text-align: center;
+		}
+		.box {
+			display: inline-block; 
+			width: 40%; 
+			overflow: hidden;
+			opacity: .75;
+			background-color: #fff;
+			transform: perspective(600px);
+			transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+			-webkit-animation: circle 4s infinite linear;
+		}
+		@-webkit-keyframes circle{
+			0% {
+				transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+			}
+			50% {
+				transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+			}
+			100% {
+				transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="dark">
+		<div class="box">
+			<img width="600" src="1.jpg" alt="Picture" />
+		</div>
+	</div>
+</body>
+</html>
